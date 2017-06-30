@@ -1,0 +1,12 @@
+<!doctype html>
+
+<script src="../hterm_all.js"></script>
+<script>
+  lib.registerInit('', () => {
+  hterm.defaultStorage = new lib.Storage.Local
+  a=new hterm.Terminal('default')
+    a.decorate(document.querySelector('terminal'));
+  })
+</script>
+    <div id="terminal"
+         style="position:relative; width:100%; height:100%"></div>
